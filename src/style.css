@@ -1,1 +1,20 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  width: 500px !important;
+  height: 700px !important;
+}
+
+h1 {
+  font-size: 200px;
+  align-self: center !important;
+}
+
+.top-sym {
+  font-size: 100px;
+}
+
+.bottom-sym {
+  font-size: 100px;
+  transform: rotate(180deg);
+}

@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  const symbols = ["&hearts;", "&clubs;", "&spades;", "&diamond;"];
+  const symbols = ["&hearts;", "&clubs;", "&spades;", "⯁"];
   const values = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"];
   const cardVal = document.getElementById("card-value");
   const topSymEl = document.querySelector(".top-sym");
@@ -17,6 +17,13 @@ window.onload = function() {
   cardVal.innerHTML = values[Math.floor(Math.random() * values.length)];
 
   if (cardSymbol == "&hearts;") {
+    topSymEl.style.color = "red";
+    bottomSymEl.style.color = "red";
+  }
+
+  if (cardSymbol == "⯁") {
+    topSymEl.style.fontsize = "130px";
+    bottomSymEl.style.fontsize = "130px";
     topSymEl.style.color = "red";
     bottomSymEl.style.color = "red";
   }

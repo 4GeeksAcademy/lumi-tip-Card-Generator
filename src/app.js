@@ -16,14 +16,7 @@ window.onload = function() {
 
   cardVal.innerHTML = values[Math.floor(Math.random() * values.length)];
 
-  if (cardSymbol == "&hearts;") {
-    topSymEl.style.color = "red";
-    bottomSymEl.style.color = "red";
-  }
-
-  if (cardSymbol == "⯁") {
-    topSymEl.style.fontsize = "130px";
-    bottomSymEl.style.fontsize = "130px";
+  if (cardSymbol == "&hearts;" || cardSymbol == "⯁") {
     topSymEl.style.color = "red";
     bottomSymEl.style.color = "red";
   }
